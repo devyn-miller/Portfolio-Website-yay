@@ -1,0 +1,245 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+:root {
+    --background-color: #f7f7f7;
+    --text-color: #333;
+    --accent-color: #2b3dda;
+    --header-bg-color: #fff;
+    --header-text-color: #0e2431;
+    --nav-link-color: #0e2431;
+    --nav-link-hover-color: #011aff;
+    --nav-link-border-color: #011aff;
+    --selection-bg-color: #2b3dda;
+    --selection-text-color: #fff;
+    --scrollbar-track-color: rgb(235, 202, 245);
+    --scrollbar-thumb-color: #420177;
+    --loader-bg-color: #e6eff1;
+    --section-bg-color: #fff;
+    --heading-color: rgb(32, 32, 32);
+    --heading-span-color: rgb(115, 3, 167);
+    --button-bg-color: #2506ad;
+    --button-hover-bg-color: #1a047e;
+    --social-icon-bg-color: #09011b;
+    --social-icon-hover-bg-color: #0685da;
+    --about-bg-color: rgb(255, 255, 255);
+    --skills-bg-color: linear-gradient(to bottom, #57059e, #4a00e0);
+    --education-bg-color: #e5ecfb;
+    --work-bg-color: linear-gradient(to bottom, #000031, #00002c);
+    --experience-bg-color: #f68c09;
+    --contact-bg-color: #e5ecfb;
+    --footer-bg-color: rgb(0, 1, 43);
+    --scroll-top-bg-color: #ffae00;
+    --scroll-progress-bar-color: #29d;
+}
+
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --accent-color: #bb86fc;
+    --header-bg-color: #333;
+    --header-text-color: #ffffff;
+    --nav-link-color: #ffffff;
+    --nav-link-hover-color: #bb86fc;
+    --nav-link-border-color: #bb86fc;
+    --selection-bg-color: #bb86fc;
+    --selection-text-color: #333;
+    --scrollbar-track-color: #333333;
+    --scrollbar-thumb-color: #bb86fc;
+    --loader-bg-color: #333;
+    --section-bg-color: #222;
+    --heading-color: #ffffff;
+    --heading-span-color: #bb86fc;
+    --button-bg-color: #bb86fc;
+    --button-hover-bg-color: #3700B3;
+    --social-icon-bg-color: #333;
+    --social-icon-hover-bg-color: #bb86fc;
+    --about-bg-color: #222;
+    --skills-bg-color: #333;
+    --education-bg-color: #222;
+    --work-bg-color: #333;
+    --experience-bg-color: #bb86fc;
+    --contact-bg-color: #222;
+    --footer-bg-color: #121212;
+    --scroll-top-bg-color: #bb86fc;
+    --scroll-progress-bar-color: #bb86fc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.25s linear;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--background-color);
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+}
+
+*::selection {
+  background: var(--accent-color);
+  color: var(--selection-text-color);
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-color);
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-color);
+}
+
+/* pre loader start */
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background: var(--loader-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.loader-container.fade-out {
+  top: -120%;
+}
+/* pre loader end */
+
+/* navbar starts */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.7rem 10%;
+  height: 6.5rem;
+  background-color: var(--header-bg-color);
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+}
+section {
+  min-height: 100vh;
+  padding: 2rem 9%;
+}
+.heading {
+  font-size: 3.5rem;
+  color: var(--heading-color);
+  font-weight: 800;
+  text-align: center;
+}
+.heading span {
+  color: var(--heading-span-color);
+}
+header .logo {
+  font-size: 1.9rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--header-text-color);
+}
+header .logo i {
+  font-size: 2.2rem;
+}
+header .logo:hover {
+  color: var(--button-hover-bg-color);
+}
+header .navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .navbar li {
+  margin-left: 2.5rem;
+}
+header .navbar ul li a {
+  font-size: 1.57rem;
+  color: var(--nav-link-color);
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.04rem;
+  transition: 0.25s;
+}
+header .navbar ul li a.active,
+header .navbar ul li a:hover {
+  color: var(--nav-link-hover-color);
+  border-bottom: 0.2rem solid var(--nav-link-border-color);
+  padding: 0.5rem 0;
+}
+/* navbar ends */
+
+/* Additional styles for other sections go here, following the same pattern of replacing direct color values with CSS variables */
+
+/* Scroll to Top Button */
+#scroll-top {
+  background: var(--scroll-top-bg-color);
+  color: var(--header-text-color);
+}
+
+/* Footer Section */
+.footer {
+  background: var(--footer-bg-color);
+}
+
+/* Contact Section */
+.contact {
+  background: var(--contact-bg-color);
+}
+
+/* Experience Section */
+.experience .content {
+  background-color: var(--experience-bg-color);
+}
+
+/* Work Section */
+.work {
+  background: var(--work-bg-color);
+}
+
+/* Education Section */
+.education {
+  background: var(--education-bg-color);
+}
+
+/* Skills Section */
+.skills {
+  background: var(--skills-bg-color);
+}
+
+/* About Section */
+.about {
+  background: var(--about-bg-color);
+}
+
+/* Social Icons */
+.social-icons a:hover {
+  background-color: var(--social-icon-hover-bg-color);
+}
+
+/* Buttons */
+.btn {
+  background: var(--button-bg-color);
+}
+.btn:hover {
+  background: var(--button-hover-bg-color);
+}
+
+/* Add any additional specific styles for your site, ensuring all color values are controlled through CSS variables for easy theme switching */

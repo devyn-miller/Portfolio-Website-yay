@@ -1,5 +1,34 @@
 $(document).ready(function () {
 
+    document.addEventListener('DOMContentLoaded', function () {
+        const themeSwitcher = document.getElementById('theme-switcher');
+        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+    
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+    
+            if (currentTheme === 'dark') {
+                themeSwitcher.textContent = "Switch to Light Mode";
+            } else {
+                themeSwitcher.textContent = "Switch to Dark Mode";
+            }
+        }
+    
+        themeSwitcher.addEventListener('click', function () {
+            let theme = document.documentElement.getAttribute('data-theme');
+            let switchToTheme = theme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', switchToTheme);
+            localStorage.setItem('theme', switchToTheme);
+    
+            if (switchToTheme === 'dark') {
+                themeSwitcher.textContent = "Switch to Light Mode";
+            } else {
+                themeSwitcher.textContent = "Switch to Dark Mode";
+            }
+        });
+    });
+    
+
     $('#menu').click(function () {
         $(this).toggleClass('fa-times');
         $('.navbar').toggleClass('nav-toggle');
