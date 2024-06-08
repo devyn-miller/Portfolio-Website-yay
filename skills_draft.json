@@ -1,0 +1,44 @@
+[
+    {
+        "category": "Programming Languages and Tools",
+        "skills": [
+            {"name": "Python", "icon": "https://img.icons8.com/color/48/000000/python--v1.png"},
+            {"name": "R", "icon": "icon_url_here"},
+            {"name": "STATA", "icon": "icon_url_here"},
+            {"name": "HTML", "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"},
+            {"name": "JavaScript", "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"},
+            {"name": "CSS", "icon": "https://img.icons8.com/color/48/000000/css3.png"},
+            {"name": "GitHub", "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"},
+            {"name": "Mathematica", "icon": "https://icons8.com/icon/fDif4XF5Tzun/the-wolfram-language-is-a-general-multi-paradigm-computational-language-developed-by-wolfram-research"}
+        ]
+    },
+    {
+        "category": "Data Analysis and Machine Learning",
+        "skills": [
+            {"name": "Calculus", "icon": "https://icons8.com/icon/jWYX7XyWGytW/minimum-value"},
+            {"name": "Bayesian Statistics", "icon": "Bayesian"},
+            {"name": "TensorFlow", "icon": "icon_url_here"},
+            {"name": "Machine Learning", "icon": "https://icons8.com/icon/114322/artificial-intelligence"},
+            {"name": "Computer Vision", "icon": "https://icons8.com/icon/HmVEHUWVK3M8/computer-vision"},
+            {"name": "Scikit-learn", "icon": "icon_url_here"},
+            {"name": "NumPy", "icon": "https://icons8.com/icon/aR9CXyMagKIS/numpy"},
+            {"name": "Pandas", "icon": "https://icons8.com/icon/xSkewUSqtErH/pandas"},
+            {"name": "Matplotlib", "icon": "icon_url_here"}
+        ]
+    },
+    {
+        "category": "Scientific and Academic Skills",
+        "skills": [
+            {"name": "Biology", "icon": "https://icons8.com/icon/13213/dna-helix"},
+            {"name": "Chemistry", "icon": "https://icons8.com/icon/58776/periodic-table-of-elements"},
+            {"name": "Physics", "icon": "https://icons8.com/icon/8PFYmHcE0qP2/physics"},
+            {"name": "Academic Writing", "icon": "https://icons8.com/icon/Px5UxCt9VqrK/hand-with-pen"}
+        ]
+    },
+    {
+        "category": "Software Proficiency",
+        "skills": [
+            {"name": "MS Office", "icon": "https://icons8.com/icon/vIbsCQXkSp6l/microsoft-office-2019"}
+        ]
+    }
+]

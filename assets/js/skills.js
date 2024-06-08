@@ -18,3 +18,4 @@ fetch('skills.json')
     });
   })
   .catch(error => console.error('Error loading skills:', error));
+
